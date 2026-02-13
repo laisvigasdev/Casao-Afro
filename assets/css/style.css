@@ -1,0 +1,77 @@
+/* Variáveis de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+img {
+    display: block; 
+}
+
+
+:root {
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+
+:root {
+    --primary-pink: rgb(210, 8, 107);
+    --primary-yellow: rgb(249, 204, 93);
+
+    --font-heading: 'Montserrat', sans-serif; 
+    --font-body: 'Lato', sans-serif;        
+}
+
+/* Classes de background */
+.bg-pink-custom {
+    background-color: var(--primary-pink) !important;
+}
+
+.bg-yellow-custom {
+    background-color: var(--primary-yellow) !important;
+}
+
+.border-pink-custom {
+    border: 1px solid var(--primary-pink) !important;
+}
+
+/* Classes de texto */
+.text-pink-custom {
+    color: var(--primary-pink) !important;
+}
+
+.text-yellow-custom {
+    color: var(--primary-yellow) !important;
+}
+
+/* Classes de fontes */
+.text-heading {
+    font-family: var(--font-heading) !important;
+}
+
+.text-body {
+    font-family: var(--font-body) !important;
+}
+
+
+/* Call to action - Animated Banner */
+
+/* 2. The Breathing Link */
+.pulse-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    animation: breathing 3s ease-in-out infinite;
+    text-decoration: none;
+}
+
+.pulse-link:hover {
+    transform: scale(1.1); /* Lifts up when hovered */
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Yellow glow on hover */
+}
+
+@keyframes breathing {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.05); opacity: 1; }
+}
